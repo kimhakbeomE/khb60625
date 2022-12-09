@@ -71,7 +71,8 @@
     $cnt = 1; //각 페이지 회원 수
 
     // 전체 회원 수
-    $db_con = mysqli_connect('127.0.0.1', 'admin', 'admin', 'BBS');
+	#$db_con = mysqli_connect('127.0.0.1', 'admin', 'admin', 'BBS');
+	include('DB/Connection.php');
     $sql_query = "SELECT * FROM bbs";
     $result = mysqli_query($db_con, $sql_query);
     $num = mysqli_num_rows($result);
