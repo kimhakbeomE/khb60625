@@ -1,4 +1,6 @@
 <?php
+//초기 사용자 처리 DB 생성
+
 
 $sql = "CREATE DATABASE bbs";
 
