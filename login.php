@@ -38,13 +38,11 @@
         <button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
         <p class="mt-2 mb-3 text-muted">&copy; 2022–2023</p>
       </form>
+      <small><a href="regster.php">아이디가 없으신가요?</a><small>
 		<?php } else {
 			$userID = $_SESSION['userID'];
 			$userName = $_SESSION['userName'];
-			echo "<p>$userName($userID)님은 이미 로그인되어 있습니다.";
-			echo "<p><button onclick=\"window.location.href='main.php'\">메인으로</button> <button onclick=\"window.location.href='logout.php'\">로그아웃</button></p>";
-		} ?>
-	<small><a href="regster.php">아이디가 없으신가요?</a><small>
+    }?>
     </main>
   </body>
   <script src="js\bootstrap.bundle.min.js"></script>

@@ -21,7 +21,9 @@ if( $userID && $userPassword != "") // 공백 체크
  			$_SESSION['userName'] = $res['userName'];
 
  			echo "<script>alert('로그인에 성공하였습니다.');</script>";
- 			echo "<script>document.location.href='http://127.0.0.1/web/main.php';</script>"; //server ip 및 web 어플리케이션 디렉토리 주소 입력
+    ?>
+      <script type="text/javascript"> location.href="main.php"; </script>
+    <?php
  		}
  		else
  		{

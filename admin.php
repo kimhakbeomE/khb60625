@@ -14,7 +14,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">메인</a>
+    <a class="navbar-brand" href="main.php">메인</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,7 +53,7 @@
     </div>
   </div>
 </nav>
-<!-- ------------------------ 회원정보의 리스트 출력  ------------------------------------ -->
+<!-- 회원정보의 리스트 출력  -->
 <table class="table table-hover">
   <thead>
     <tr>
@@ -66,7 +66,7 @@
     </tr>
   </thead>
 <?php
-	//pageing 
+	//pageing
 
     $cnt = 1; //각 페이지 회원 수
 
@@ -80,7 +80,7 @@
     // 한 페이지당 데이터 개수 ( 한 페이지당 보여줄 데이터 개수 )
     $list_num = 10;
 
-    // 한 블럭당 페이지 개수 
+    // 한 블럭당 페이지 개수
     $page_num = 5;
 
     //현재 페이지
@@ -117,13 +117,13 @@
     //글번호
     $cnt = $start + 1;
 
-    // 기존 쿼리에 페에지 개념을 도입 limit 	
+    // 기존 쿼리에 페에지 개념을 도입 limit
 	$sql = "SELECT * FROM bbs ORDER BY no DESC limit ".$start.", ".$list_num.""; // 내림 차순으로 정렬 및 10개의 레코드까지 출력
 	$res = mysqli_query($db_con, $sql); // mysql query 실행
 
 	while($row = mysqli_fetch_array($res)) {
 
-	
+
 ?>
 	<tbody>
 		<tr class="talbe-active">
@@ -135,7 +135,7 @@
 			<td><?php echo $row['userDate']; ?></td>
 		</tr>
 	</tbody>
-	
+
 <?php }  ?>
 </table>
 <!-- pageing  -->
@@ -152,7 +152,7 @@
         </li>
       <?php } ?>
 
-    <?php for($p = $s_pageNum; $p <= $e_pageNum; $p++) { ?> 
+    <?php for($p = $s_pageNum; $p <= $e_pageNum; $p++) { ?>
 		<?php if($page == $p) { ?>
     	<li class="page-item active">
       		<a class="page-link" href='admin.php?page=<?php print_r($p); ?> '><?php print_r($p); ?> </a>
