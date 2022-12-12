@@ -45,8 +45,8 @@
     <?php } ?>
   </table>
   <div>
+    <!-- list 페이지 버튼 -->
     <a href="write.php"><button class="w-10 btn btn-lg btn-primary" type="submit">글쓰기</button></a>
-
   </div>
 </body>
   <!-- bootstrap  JS -->

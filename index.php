@@ -4,7 +4,7 @@
 </head>
 <body>
   <script>
-    location.href= "login.php";
+    location.href= "main.php";
   </script>
 </body>
 
