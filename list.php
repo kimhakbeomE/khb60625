@@ -1,5 +1,8 @@
+<?php
+	include("list_session.php"); // 관리자 페이지 접근 시 관리자 계정의 세션만을 허용하는 php파일을 불러온다.
+?>
+
 <!DOCTYPE html>
-<?php session_start(); ?>
 <html lang="ko">
 <head>
   <title>게시글 목록</title>
