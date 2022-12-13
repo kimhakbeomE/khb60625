@@ -34,10 +34,10 @@
 		    $num = mysqli_num_rows($result);
 
 		    // 한 페이지당 데이터 개수 ( 한 페이지당 보여줄 데이터 개수 )
-		    $list_num = 5;
+		    $list_num = 10;
 
 		    // 한 블럭당 페이지 개수
-		    $page_num = 2;
+		    $page_num = 5;
 
 		    //현재 페이지
 		    $page = isset($_GET['Num'])?$_GET['Num'] : 1; //삼항식
