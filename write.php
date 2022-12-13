@@ -12,18 +12,13 @@
   <div>
       <form action="write_ok.php" method="post">
           <div>
-              <textarea name="Title" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
+              <textarea class="form-control" name="Title" style="width:800px; height:10px;" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
+              <textarea class="form-control" name="userName" style="width:800px; height:10px;" rows="1" cols="55" placeholder="작성자" maxlength="100" required></textarea>
+              <textarea class="form-control" name="Content" style="width:1000px; height:400px;" placeholder="내용" required></textarea>
           </div>
-          <div class="wi_line"></div>
           <div>
-              <textarea name="Content"  rows="1" cols="55" placeholder="글쓴이" maxlength="100" required></textarea>
-          </div>
-          <div class="wi_line"></div>
-          <div>
-              <textarea name="userName" placeholder="내용" required></textarea>
-          </div>
-          <div class="bt_se">
-              <button type="submit">글 작성</button>
+              <button type="submit" class="w-10 btn btn-lg btn-primary">작성</button>
+              <a href="list.php"><button type="button" class="w-10 btn btn-lg btn-primary">목록</button></a>
           </div>
       </form>
   </div>
